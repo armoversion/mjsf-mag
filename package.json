@@ -1,0 +1,20 @@
+{
+  "name": "bulaivskyi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docker-run": "docker build --tag vue-lab-1:latest . && docker run -d --rm -p 8080:80 --name vue-lab-1-instance vue-lab-1:latest",
+    "docker-stop": "docker stop vue-lab-1-instance"
+  },
+  "dependencies": {
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.3.6"
+  }
+}
